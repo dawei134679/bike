@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/id_route_linear"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.admin.drawlayouttest.activity.UserActivity">
+
+    <!--<ExpandableListView-->
+        <!--android:id="@+id/id_expand"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</ExpandableListView>-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fitsSystemWindows="true"
+        android:background="@color/wan_grey"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+
+        <ImageView
+            android:id="@+id/id_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/returnn"
+            android:layout_gravity="left"
+            android:paddingRight="@dimen/x55"
+            />
+
+        <ImageView
+            android:id="@+id/id_h_title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/id_h_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textSize="@dimen/app_text_content"
+            android:textColor="@color/x3"
+           android:text="用户协议"
+            android:singleLine="true"
+
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/id_main_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wan_grey"
+        android:paddingBottom="@dimen/x10"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/half"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+
+            />
+
+        <ImageView
+            android:id="@+id/id_main_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bike"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:layout_marginTop="@dimen/x4"
+            />
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/id_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
+        <TextView
+            android:id="@+id/id_qi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="骑过去"
+            android:textColor="@color/x3"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/x50"
+            android:layout_marginRight="@dimen/x20_main"
+            android:gravity="center_horizontal"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            />
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>

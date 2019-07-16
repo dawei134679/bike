@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/money_backgroud"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/iv_back_balance_add_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/x55"
+            android:src="@mipmap/returnn" />
+
+        <TextView
+            android:id="@+id/id_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="余额充值"
+            android:textColor="@color/monet_card_text"
+            android:textSize="@dimen/sp_18" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/line_view" />
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15_dp"
+        android:layout_marginTop="@dimen/x20_main"
+        android:layout_marginRight="@dimen/x15_dp"
+        android:text="余额"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/x16_sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15_dp"
+        android:layout_marginTop="@dimen/x40"
+        android:layout_marginRight="@dimen/x15_dp"
+        android:text="余额充值"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/x16_sp" />
+    <TextView
+        android:id="@+id/tv_add_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15_dp"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginRight="@dimen/x15_dp"
+        android:text="29"
+        android:gravity="center"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/x16_sp"
+        android:background="@drawable/recharge_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x140"
+        android:layout_marginLeft="@dimen/x15_dp"
+        android:layout_marginTop="@dimen/x20_main"
+        android:layout_marginRight="@dimen/x15_dp"
+        android:background="@drawable/yuan_white_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:text="支付方式"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/x16_sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x80"
+            android:layout_marginTop="@dimen/x15_dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/weixin" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1"
+                    android:layout_marginTop="@dimen/x15_dp"
+                    android:layout_marginBottom="@dimen/x15_dp"
+                    android:background="@color/line_view" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/zhifubao" />
+            </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_pay_exit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x80"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical">
+
+            <RadioButton
+                android:id="@+id/rb_balance_add_exit_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@null"
+                android:checked="true"
+                android:layout_marginLeft="@dimen/x10"
+                android:drawableRight="@drawable/radioselector"
+                android:drawablePadding="@dimen/x180"
+                android:text="微信支付"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/x16_sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginTop="@dimen/x15_dp"
+                android:layout_marginBottom="@dimen/x15_dp"
+                android:background="@color/line_view" />
+
+            <RadioButton
+                android:id="@+id/rb_balance_add_exit_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@null"
+                android:drawableRight="@drawable/radioselector"
+                android:drawablePadding="164dp"
+                android:text="支付宝支付"
+                android:layout_marginLeft="@dimen/x10"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/x16_sp" />
+        </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15_dp"
+        android:layout_marginTop="@dimen/x20_main"
+        android:layout_marginRight="@dimen/x15_dp"
+        android:text="1、余额需保持在29元以上，用于支付超时骑行费和违停费，可实时自助退还"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/sp_14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15_dp"
+        android:layout_marginTop="@dimen/x80"
+        android:layout_marginRight="@dimen/x15_dp">
+
+        <TextView
+            android:id="@+id/tv_recharge_money_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="29"
+            android:textColor="@color/bg_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_recharge_money_exit"
+            android:text="元"
+            android:textColor="@color/bg_black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_balance_add_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/recharge_add" />
+    </RelativeLayout>
+</LinearLayout>

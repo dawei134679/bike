@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_backgroud"
+    >
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/id_play_tab"
+        android:layout_marginTop="50dp"
+        app:tabSelectedTextColor="@color/main_backgroud"
+        app:tabTextColor="@color/monet_card_text"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabIndicatorHeight="0dp"
+       app:tabBackground="@drawable/tablayout_shape"
+     android:layout_marginLeft="@dimen/x15_dp"
+        android:layout_marginRight="@dimen/x10"
+        app:paddingStart="5dp"
+        app:paddingEnd="5dp"
+
+        >
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_paly_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+
+
+</LinearLayout>

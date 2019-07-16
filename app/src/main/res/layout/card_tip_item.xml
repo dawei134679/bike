@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/id_gift_relative"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@mipmap/content_img"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginRight="@dimen/x25"
+        android:layout_marginBottom="@dimen/x8"
+        />
+
+    <TextView
+        android:id="@+id/id_gift_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="酷游商城新人礼"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginTop="@dimen/x15_dp"
+        android:textStyle="bold"
+        />
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="@dimen/x40"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_alignEnd="@+id/id_gift_relative"-->
+        <!--android:layout_marginEnd="17dp">-->
+        <TextView
+            android:id="@+id/id_gift_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/x55"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/id_gift_relative"
+            android:layout_marginEnd="31dp"
+            android:layout_alignBottom="@+id/textView2" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+
+        android:textStyle="bold"
+        android:layout_toLeftOf="@id/id_gift_money"
+        android:layout_marginTop="14dp"
+
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/id_gift_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="有效期6天"
+        android:textSize="11sp"
+        android:textColor="#dfeecc"
+        android:layout_alignBottom="@id/id_gift_relative"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@id/id_gift_name"
+
+        />
+
+        <TextView
+            android:id="@+id/id_gift_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="满99可用"
+            android:textColor="#fdeecc"
+            android:textSize="11sp"
+
+            android:layout_alignRight="@id/id_gift_money"
+            android:layout_alignBottom="@id/id_gift_relative"
+            android:layout_marginBottom="5dp"
+            />
+
+
+
+
+    <!--</LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

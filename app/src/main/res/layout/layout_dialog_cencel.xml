@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_backgroud"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    >
+
+    <TextView
+    android:id="@+id/id_dialog_cancel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="取消"
+    android:textColor="@color/primary_dark"
+    android:textSize="20sp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    />
+
+    <ImageView
+        android:id="@+id/id_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dp"
+        android:visibility="gone"
+        />
+
+
+
+</RelativeLayout>

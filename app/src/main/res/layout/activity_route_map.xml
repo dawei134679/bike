@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.drawlayouttest.activity.RouteMapActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fitsSystemWindows="true"
+        android:background="@color/wan_grey"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+
+        <ImageView
+            android:id="@+id/id_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/returnn"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left"
+            android:paddingRight="@dimen/x55"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_toolbar"
+        >
+        <com.amap.api.maps.MapView
+            android:id="@+id/id_mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/id_toolbar"
+            >
+
+        </com.amap.api.maps.MapView>
+
+        <RelativeLayout
+            android:id="@+id/id_main_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x10"
+            android:layout_below="@id/id_toolbar"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/half"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+
+                />
+
+            <ImageView
+                android:id="@+id/id_main_yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/enjoy"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/x4"
+                />
+        </RelativeLayout>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+</RelativeLayout>

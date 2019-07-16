@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yuan_white_shape"
+   >
+
+    <TextView
+        android:id="@+id/tv_dialog_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/app_text_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="40dp"
+        android:text="是否要申请退款"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dialog_content"
+        android:layout_marginTop="40dp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#4FE99F"
+            android:textSize="@dimen/app_text_content"
+            android:gravity="center"
+            android:background="@drawable/line_gray_layer"
+
+            android:text="否"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:id="@+id/tv_yes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/line_gray_layer"
+            android:layout_height="wrap_content"
+            android:textColor="#4FE99F"
+            android:textSize="@dimen/app_text_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="是"
+
+            />
+    </LinearLayout>
+</RelativeLayout>

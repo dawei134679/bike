@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <!--<include layout="@layout/title_bar" />-->
+
+    <TextView
+        android:id="@+id/tv_my_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/my_money"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_money"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/box_bottom_line_greed_normal"
+        android:gravity="center|left"
+        android:hint="请选择充值金额(元)"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_one_y"
+            style="@style/money_style"
+            android:text="9" />
+
+        <TextView
+            android:id="@+id/tv_two_y"
+            style="@style/money_style"
+            android:layout_marginRight="10dp"
+            android:text="18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_frist_y"
+            style="@style/money_style"
+            android:text="30" />
+
+        <TextView
+            android:id="@+id/tv_one_b"
+            style="@style/money_style"
+            android:layout_marginRight="10dp"
+            android:text="99" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line_wx"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/box_bottom_line_greed_normal"
+        android:drawableLeft="@mipmap/wxpay"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/current"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="微信"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/line_ali"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box_bottom_line_greed_normal"
+        android:drawableLeft="@mipmap/alipay"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/check"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="支付宝"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/tv_cz_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/app_text_content"
+        android:text="@string/money_tips"/>
+    <Button
+        android:id="@+id/bt_cz"
+        style="@style/button_style_nomargin"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="支付" />
+
+    </LinearLayout>
+</ScrollView>

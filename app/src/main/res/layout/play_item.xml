@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/x15_dp"
+
+    >
+
+    <ImageView
+        android:id="@+id/id_img"
+        android:layout_width="@dimen/x130"
+        android:layout_height="@dimen/x80"
+        android:layout_marginLeft="@dimen/x10"
+        android:scaleType="fitXY"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/x10"
+        android:background="@mipmap/shadow2"
+        android:layout_alignBottom="@+id/id_img"
+        android:layout_alignParentRight="true"
+       android:layout_marginLeft="@dimen/x135"
+      >
+        <TextView
+            android:id="@+id/id_title"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:textColor="@color/monet_card_text"
+            android:textSize="@dimen/app_text_content"
+            android:layout_marginLeft="@dimen/x20_main"
+            android:text="放假哦啊放假"
+            android:paddingTop="@dimen/x20_main"
+            />
+        <TextView
+            android:id="@+id/id_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金佛安徽丰富"
+            android:layout_marginTop="@dimen/x15_dp"
+            android:textColor="@color/x9_login"
+            android:textSize="@dimen/x15_text_main"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="@dimen/x20_main"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

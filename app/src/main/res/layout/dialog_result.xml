@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:background="@drawable/yuan_white_shape"
+   >
+
+    <TextView
+        android:id="@+id/id_tv"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="骑行结束"
+      android:layout_marginRight="@dimen/x20_main"
+        android:paddingBottom="@dimen/x10"
+        android:textSize="@dimen/app_text_title"
+        android:layout_marginLeft="@dimen/x20_main"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"/>
+    <View
+        android:id="@+id/id_line_one"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#3BE777"
+        android:layout_below="@id/id_tv"
+        />
+
+
+
+        <TextView
+            android:id="@+id/tv_result_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/app_text_content"
+            android:layout_marginRight="@dimen/x20_main"
+
+            android:text="骑行时长：10"
+          android:paddingTop="@dimen/x10"
+            android:layout_below="@id/id_line_one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/x20_main"
+            />
+
+    <TextView
+        android:id="@+id/tv_result_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/app_text_content"
+        android:layout_marginRight="@dimen/x20_main"
+        android:paddingTop="@dimen/x10"
+        android:layout_marginLeft="@dimen/x20_main"
+
+        android:layout_below="@id/tv_result_content"
+        android:text="骑行花费：10"/>
+
+    <TextView
+        android:id="@+id/tv_result_diaodu_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/app_text_content"
+        android:layout_marginRight="@dimen/x20_main"
+        android:paddingTop="@dimen/x10"
+        android:layout_marginLeft="@dimen/x20_main"
+
+        android:layout_below="@id/tv_result_money"
+        android:text="调度费用：10"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/bt_ok_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3BE777"
+       android:layout_alignParentRight="true"
+        android:text="@string/app_ok"
+        android:paddingBottom="5dp"
+        android:paddingTop="@dimen/x20_main"
+        android:layout_marginBottom="20dp"
+        android:paddingRight="@dimen/x60"
+        android:layout_below="@id/tv_result_money"
+        android:textSize="@dimen/app_text_content"/>
+</RelativeLayout>

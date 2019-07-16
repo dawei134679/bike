@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="title_bar_height">48dp</dimen>
+
+    <dimen name="text_size_13sp">13sp</dimen>
+    <dimen name="app_text_title">18sp</dimen>
+    <dimen name="app_text_content">17sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="x16_sp">16sp</dimen>
+    <dimen name="x5_main">5dp</dimen>
+    <dimen name="x20_main">20dp</dimen>
+    <dimen name="x15_text_main">15sp</dimen>
+    <dimen name="x210_login">210dp</dimen>
+    <dimen name="x10">10dp</dimen>
+    <dimen name="x20_sp">20sp</dimen>
+    <dimen name="x15_dp">15dp</dimen>
+    <dimen name="x4">4sp</dimen>
+    <dimen name="x130">130dp</dimen>
+    <dimen name="x100">100dp</dimen>
+    <dimen name="x80">80dp</dimen>
+
+    <dimen name="x135">135dp</dimen>
+    <dimen name="x13_sp">13sp</dimen>
+    <dimen name="x35">35dp</dimen>
+    <dimen name="x140">140dp</dimen>
+    <dimen name="x17">17dp</dimen>
+    <dimen name="x60">60dp</dimen>
+    <dimen name="x30">90dp</dimen>
+    <dimen name="x65">65dp</dimen>
+    <dimen name="x40">40dp</dimen>
+    <dimen name="x28">28dp</dimen>
+    <dimen name="x50">50dp</dimen>
+    <dimen name="x25">25dp</dimen>
+    <dimen name="x18_sp">18sp</dimen>
+    <dimen name="x55">55dp</dimen>
+    <dimen name="x40_sp">40sp</dimen>
+    <dimen name="x7">7dp</dimen>
+    <dimen name="x78">78dp</dimen>
+    <dimen name="x8">8dp</dimen>
+    <dimen name="x12">12dp</dimen>
+    <dimen name="x18">18dp</dimen>
+    <dimen name="x9">9dp</dimen>
+    <dimen name="x180">180dp</dimen>
+    <dimen name="x152">152dp</dimen>
+
+    <!--Learning-->
+    <dimen name="x1">1dp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+
+</resources>

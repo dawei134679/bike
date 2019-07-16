@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_backgroud"
+
+    tools:context="com.example.admin.drawlayouttest.activity.TripContentActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <ImageView
+            android:id="@+id/id_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/returnn"
+            android:paddingRight="@dimen/x55"
+            />
+
+        <TextView
+            android:id="@+id/id_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行程详情"
+            android:textSize="18sp"
+            android:textColor="@color/monet_card_text"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/id_fenxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享"
+            android:textSize="@dimen/app_text_content"
+            android:textColor="@color/monet_card_text"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/id_trip_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/trip_map_a"
+        android:scaleType="fitXY"
+        android:layout_below="@id/id_toolbar"
+        />
+    <ImageView
+        android:id="@+id/id_trip_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/trip_map"
+        android:scaleType="fitXY"
+        android:layout_below="@id/id_trip_one"
+        />
+    <ImageView
+        android:id="@+id/id_trip_three"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/trip_map_a"
+        android:scaleType="fitXY"
+        android:layout_below="@id/id_trip_two"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bg26"
+        android:layout_marginLeft="@dimen/x15_dp"
+        android:layout_marginRight="@dimen/x15_dp"
+        android:layout_marginBottom="@dimen/x20_main"
+        >
+
+       <LinearLayout
+           android:id="@+id/id_trip_content_one"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_alignParentBottom="true"
+           android:layout_marginLeft="@dimen/x12"
+           android:layout_marginRight="@dimen/x12"
+           >
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text="骑行距离(米)"
+               android:textColor="@color/monet_card_text"
+               android:layout_marginLeft="@dimen/x15_dp"
+               android:layout_marginBottom="@dimen/x30"
+               android:layout_weight="1"
+              android:gravity="center"
+               android:textSize="@dimen/x13_sp"
+               />
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="骑行时间(min)"
+               android:textColor="@color/monet_card_text"
+               android:layout_marginLeft="@dimen/x15_dp"
+               android:layout_marginBottom="@dimen/x30"
+             android:gravity="center"
+               android:textSize="@dimen/x13_sp"
+               />
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="卡路里(kCall)"
+               android:textColor="@color/monet_card_text"
+               android:layout_marginLeft="@dimen/x15_dp"
+               android:layout_marginBottom="@dimen/x30"
+                android:gravity="center"
+               android:textSize="@dimen/x13_sp"
+               />
+       </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_trip_content_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           android:layout_above="@id/id_trip_content_one"
+            >
+            <TextView
+                android:id="@+id/id_trip_dis"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="555"
+                android:textColor="@color/monet_card_text"
+                android:layout_marginLeft="@dimen/x15_dp"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/x20_sp"
+                />
+            <TextView
+                android:id="@+id/id_trip_min"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textColor="@color/monet_card_text"
+                android:layout_marginLeft="@dimen/x15_dp"
+                android:layout_marginBottom="@dimen/x10"
+                android:gravity="center"
+                android:textSize="@dimen/x20_sp"
+                />
+            <TextView
+                android:id="@+id/id_trip_cal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="45"
+                android:textColor="@color/monet_card_text"
+                android:layout_marginLeft="@dimen/x15_dp"
+                android:layout_marginBottom="@dimen/x10"
+                android:gravity="center"
+                android:textSize="@dimen/x20_sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_trip_content_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_above="@id/id_trip_content_two"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:src="@mipmap/distance"
+                android:layout_marginLeft="@dimen/x15_dp"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/time"
+                android:textColor="@color/monet_card_text"
+                android:layout_marginLeft="@dimen/x15_dp"
+                android:layout_marginBottom="@dimen/x10"
+                android:gravity="center"
+                />
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+              android:src="@mipmap/cal"
+                android:layout_marginLeft="@dimen/x15_dp"
+                android:layout_marginBottom="@dimen/x15_dp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id_trip_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13044556677"
+            android:textSize="@dimen/app_text_content"
+            android:textColor="@color/monet_card_text"
+            android:layout_above="@id/id_trip_content_three"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/x50"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/id_trip_touxiang"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/tou"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="235dp"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>

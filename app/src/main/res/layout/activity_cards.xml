@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <EditText
+        android:id="@+id/et_yq"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box_bottom_line_greed_normal"
+        android:gravity="center"
+        android:hint="请输入兑换码"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/app_text_content"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/tv_dui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button"
+        android:layout_margin="10dp"
+        android:text="畅骑卡兑换"
+        android:textColor="@drawable/box_text_color"
+        android:textSize="@dimen/app_text_content" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+</LinearLayout>

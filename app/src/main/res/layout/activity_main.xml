@@ -1,0 +1,211 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_drawer">
+
+    <RelativeLayout
+        android:id="@+id/id_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/id_main_relative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="65dp"
+                    android:layout_gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/half"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitCenter"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/id_main_yuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/bike"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="@dimen/x4"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/id_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fitsSystemWindows="true"
+            android:background="@color/money_backgroud"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            >
+
+            <ImageView
+                android:id="@+id/id_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/personal"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="left"
+                android:paddingRight="@dimen/x10"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="酷游单车"
+                android:textColor="#000"
+                />
+            <ImageView
+                android:id="@+id/id_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/search"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                />
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/id_main_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5"
+            android:layout_below="@id/id_toolbar"
+            />
+
+
+            <RadioGroup
+                android:id="@+id/main_group"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_below="@id/id_main_line"
+
+                android:background="@color/main_backgroud"
+
+                >
+
+                <RadioButton
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@mipmap/linee"
+                    android:drawablePadding="@dimen/x8"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="bottom"
+                    android:text="自由骑行"
+                    android:textSize="@dimen/x15_text_main"
+
+                    />
+
+
+                    <RadioButton
+                        android:id="@+id/id_red_shop"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:text="红包商城"
+                        android:textColor="#000"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="bottom"
+                        android:textSize="@dimen/x15_text_main"
+                        android:drawablePadding="@dimen/x8"
+                        android:drawableBottom="@mipmap/gray_line"
+
+                        />
+
+
+
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="bottom"
+                    android:text="骑行攻略"
+                    android:textColor="#000"
+                    android:textSize="@dimen/x15_text_main"
+                    android:drawableBottom="@mipmap/gray_line"
+                    android:drawablePadding="@dimen/x8"
+
+                    />
+            </RadioGroup>
+        <ImageView
+            android:id="@+id/main_gray_line"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:src="@mipmap/gray"
+            android:scaleType="fitXY"
+            android:layout_below="@id/main_group"
+            />
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/red_group"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:layout_marginLeft="240dp"-->
+            <!--/>-->
+
+                <TextView
+                    android:id="@+id/id_net"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="网络不可用"
+                    android:layout_marginTop="48dp"
+                    android:textColor="#000"
+                    android:background="@color/main_backgroud"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    />
+
+
+
+
+
+
+        <!--fragment的占位符-->
+        <FrameLayout
+            android:id="@+id/main_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_gray_line"
+          >
+        </FrameLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/id_nv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/layout_drawerlayout"
+        />
+        <!--app:headerLayout="@layout/header_just_username"-->
+
+
+</android.support.v4.widget.DrawerLayout>

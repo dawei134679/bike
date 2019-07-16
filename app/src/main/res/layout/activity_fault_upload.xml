@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+   >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+        <ImageView
+            android:id="@+id/id_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/returnn"
+            android:paddingRight="@dimen/x10"
+            />
+
+        <TextView
+            android:id="@+id/id_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="故障上传"
+            android:textSize="18sp"
+            android:textColor="@color/monet_card_text"
+            android:layout_gravity="center"
+
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/id_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/input1"
+                android:layout_marginRight="@dimen/x15_dp"
+                android:layout_marginLeft="@dimen/x15_dp"
+
+                >
+
+                <EditText
+                    android:id="@+id/id_fault_number_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/x15_text_main"
+                    android:layout_marginLeft="@dimen/x15_dp"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/x20_main"
+                    android:background="@null"
+                    android:hint="扫描二维码或手动输入单车编号"
+                    android:textColorHint="@color/x9_login"
+                    android:inputType="number"
+                    />
+
+                <ImageView
+                    android:id="@+id/id_fault_number_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/scann"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x15_dp"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/x15_dp"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15_dp"
+                android:layout_marginRight="@dimen/x15_dp"
+                android:background="@drawable/yuan_white_shape">
+
+                <ImageView
+                    android:id="@+id/id_photo_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x15_dp"
+                    android:layout_marginLeft="@dimen/x15_dp"
+                    android:src="@mipmap/photo"
+                    android:visibility="gone"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/id_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x15_dp"
+                    android:layout_marginLeft="@dimen/x15_dp"
+                    android:src="@mipmap/photo"
+                    android:layout_toRightOf="@id/id_photo_result"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/id_photo"
+                    android:layout_toRightOf="@id/id_photo"
+                    android:text="拍摄故障照片"
+                    android:textColor="@color/x9_login"
+                    android:textSize="@dimen/x15_text_main"
+                    android:layout_marginLeft="@dimen/x15_dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15_dp"
+                android:layout_marginRight="@dimen/x15_dp"
+                android:background="@mipmap/bg3">
+
+                <EditText
+                    android:id="@+id/id_fault_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="请描述遇到车辆故障"
+                    android:textSize="@dimen/x15_text_main"
+                    android:layout_marginLeft="@dimen/x15_dp"
+                    android:layout_marginTop="@dimen/x15_dp"
+                    android:textColorHighlight="@color/x9_login"
+                    android:background="@null"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15_dp"
+                android:layout_marginRight="@dimen/x15_dp"
+                android:layout_marginTop="@dimen/x50"
+                >
+                <TextView
+                    android:id="@+id/id_submit_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/btn151"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="@dimen/x12"
+                    android:paddingTop="@dimen/x12"
+                    android:textSize="@dimen/x20_sp"
+                    android:text="提交故障"
+                    android:textColor="@color/guzhang"
+                    android:gravity="center"
+
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/money_backgroud"
+    android:orientation="vertical"
+    tools:context=".activity.ActionActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/iv_back_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/x55"
+            android:src="@mipmap/returnn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我的卡劵"
+            android:textColor="@color/monet_card_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_card_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:text="使用帮助"
+            android:textColor="@color/monet_card_text"
+            android:textSize="@dimen/app_text_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/shadow" />
+    <!--Learning add-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15_dp"
+        android:layout_marginTop="@dimen/x15_dp"
+        android:layout_marginRight="@dimen/x15_dp"
+        android:background="@drawable/yuan_white_shape">
+
+        <TextView
+            android:id="@+id/tv_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15_dp"
+            android:layout_marginTop="@dimen/x15_dp"
+            android:text="会员卡"
+            android:textColor="@color/safe"
+            android:textSize="@dimen/app_text_content" />
+
+        <ImageView
+            android:id="@+id/iv_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_card"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginBottom="@dimen/x15_dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/card20" />
+
+        <TextView
+            android:id="@+id/tv_vip_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_card"
+            android:layout_marginLeft="@dimen/x20_main"
+            android:layout_marginBottom="@dimen/x15_dp"
+            android:text="到期时间"
+            android:textSize="@dimen/x15_text_main"
+            android:textColor="@color/bg_white"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_buy_vip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_marginLeft="@dimen/x15_dp"
+        android:layout_marginTop="@dimen/x80"
+        android:layout_marginRight="@dimen/x15_dp"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/x16_sp"
+        android:text="购买会员天数"
+        android:gravity="center"
+        android:background="@drawable/bg_button"/>
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/tablayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/x40"-->
+    <!--android:layout_marginTop="@dimen/x20_main"-->
+    <!--android:layout_marginBottom="@dimen/x15_dp"-->
+    <!--android:visibility="gone"-->
+    <!--app:tabBackground="@drawable/tablayout_tab_normal"-->
+    <!--app:tabIndicatorHeight="0dp"-->
+    <!--app:tabSelectedTextColor="@color/white"-->
+    <!--app:tabTextAppearance="@style/TabLayoutTextStyle"-->
+    <!--app:tabTextColor="@color/monet_card_text" />-->
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/id_action_frameLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"></FrameLayout>-->
+
+    <!--已有的-->
+    <!--<com.example.admin.drawlayouttest.view.NoScrollViewPager-->
+    <!--android:id="@+id/viewpager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1">-->
+    <!--</com.example.admin.drawlayouttest.view.NoScrollViewPager>-->
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <EditText
+        android:id="@+id/et_info"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:gravity="center|left"
+        android:hint="输入姓名"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:background="@drawable/bg_button"/>
+    <EditText
+        android:id="@+id/et_info_card"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="10dp"
+        android:inputType="text"
+        android:hint="输入身份证号码"
+        android:gravity="center|left"
+        android:background="@drawable/bg_button"/>
+</LinearLayout>

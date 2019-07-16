@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">酷游单车</string>
+    <string name="scan_text">对准车上的二维码</string>
+    <string-array name="expand_list">
+        <item>用户协议</item>
+        <item>使用权限?</item>
+        <item>无法开锁</item>
+        <!--<item>如何还车</item>-->
+        <!--<item>保证金与收费</item>-->
+        <!--<item>为什么要交保证金，保证金与余额有什么不同?</item>-->
+        <!--<item>保证金退款已超3个工作日还没到账?</item>-->
+        <!--<item>假如我骑行费用超过余额，导致余额为负怎么办?</item>-->
+        <!--<item>找不到车</item>-->
+        <!--<item>客服电话：0335-8352566</item>-->
+    </string-array>
+
+
+    <string name="exit">退出</string>
+    <string name="app_ok">确定</string>
+    <string name="app_cancel">取消</string>
+
+    <!--扫一扫-->
+    <string name="qc_code_close">关闭</string>
+    <string name="qr_code_auto_scan_notification">对准车上的二维码</string>
+    <string name="qr_code_notification">提示</string>
+    <string name="qr_code_camera_not_open">您的相机功能好像没有打开哦~去\"设置>隐私>相机\"设置一下吧</string>
+    <string name="qr_code_positive_button_know">知道了</string>
+    <string name="qr_code_positive_button_confirm">确认</string>
+    <string name="qr_code_could_not_read_qr_code_from_picture">没有读出图片中的链接，换张图片试试吧~</string>
+    <string name="qr_code_could_not_read_qr_code_from_scanner">对不起，无法打开扫出的内容</string>
+    <string name="qr_code_camera_not_found">未检测到相机</string>
+
+
+    <string name="login">手机验证</string>
+    <string name="start">开始</string>
+    <string name="input_phone">请输入手机号码</string>
+    <string name="input_password">请输入验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="tips"><Data><![CDATA[1.保证金39元，可实时退还<br />2.收费标准：3元/30分钟<br />3.酷游单车停车基于“电子围栏”技术，单车<font color="#ff0000"><b>须停在</b></font>“酷游单车专用停车位”，手动锁车并在<font color="#ff0000"><b>APP点“结束用车”按钮</b></font>结束计费。<br />4.若您不在“酷游单车专用停车位”还车，系统会额外<font color="#ff0000"><b>加收您20元</b></font>的调度费用。]]></Data></string>
+    <string name="setting">个人中心</string>
+    <string name="pay_list">明细</string>
+    <string name="tui_k">退保证金</string>
+    <string name="my_wallet">我的钱包</string>
+    <string name="complete">完成</string>
+    <string name="find">查询</string>
+    <string name="my_stroke">我的行程</string>
+    <string name="logout_me">是否退出登录?</string>
+    <string name="usehelp">用户指南</string>
+    <string name="about">关于</string>
+    <string name="friend">我的卡券</string>
+    <string name="check_update">检查更新</string>
+    <string name="stop_bike_message">单车设有专用停车位，APP中有全部专用停车位的位置显示，请到专用停车位进行借车和还车</string>
+    <string name="stop_bike_title">停车点</string>
+    <string name="yy_money_title">停车与计费</string>
+    <string name="yy_money_message">开锁后计费开始，还车时只有将车停入专用停车位，APP中手动点击“还车”方可结束计费</string>
+    <string name="gz_post_title">坏车上报</string>
+    <string name="gz_post_messsage">如果您发现坏车请告诉我们,以便我们尽快修复,途径:在手机应用填写故障上报</string>
+    <string name="pi_photo">拍摄故障照片</string>
+    <string name="mark_info">备注故障信息</string>
+    <string name="deposit_ok">充值成功</string>
+    <string name="my_money">余额为:%1$s元</string>
+    <string name="apply_refunds">申请退款</string>
+    <string name="request_open">开锁请求中</string>
+    <string name="net_un_work">网络不可用，请检查网络或是否禁止app使用网络</string>
+    <string name="forced">强制还车费用需要增加:%1$s元</string>
+    <string name="order_tips">提示：酷游单车采用电子围栏技术，须在酷游专用停车位锁车后点击“结束用车”结束计费；在专用停车位外结束用车会产生额外20元的调度费用。</string>
+    <string name="tishi_tips">提示：请将单车停放在酷游专用停车位，否则系统将会额外加收您20元的调度费用。\n\n套餐会员本次骑行前120分钟免费,超过按3元/30分钟计费</string>
+    <string name="money_tips">提示：酷游单车可先消费后充值，%1$s元以内均可用车；超过%1$s元需要充值之后再次用车；余额0元可退保证金，默认充值金额为您当前的欠费金额。</string>
+    <string name="active"><Data><![CDATA[畅骑卡使用期间不限次数畅骑;<br />畅骑卡使用期间每次行程前120分钟免费，超出部分按正常计费规则收费:<br />畅骑卡免费骑行天数从兑换当日开始计算，至畅骑卡失效日期当日结束:<br />购卡成功后，相应费用不予退还:<br />退保证金后无法再骑车，且已购买的畅骑卡剩余时长不变，在畅骑卡有效期内您仍可以通过充值保证金回复畅骑卡权益;]]></Data></string>
+
+
+    <string name="save_picture">保存图片</string>
+    <string name="save_picture_failed">保存失败</string>
+    <string name="save_picture_success">图片成功保存</string> <!--至%s目录-->
+    <string name="money_chongzhi_one">1.北戴河区政府旅游慢交通工程。\n2.2017年上线，累计服务百万游客。\n3.政府、银行、企业三方共管保证金账户，实时退还。\n4.先骑行后付费，退保证金前交清欠费即可。</string>
+    <!--<string name="money_chongzhi_two">元，可实时退还。\n2.先骑行后付费，退保证金前交清欠费即可。\n3.骑行结束有门票优惠券返还，享受官方低价门票，省回骑行费。</string>-->
+    <string name="money_chongzhi_two">1.2017年上线，累计服务百万游客。\n2.政府、银行、企业三方共管保证金账户，实时退还。\n3.先骑行后付费，退保证金前交清欠费即可。</string>
+</resources>

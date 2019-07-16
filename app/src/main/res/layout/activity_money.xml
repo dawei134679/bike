@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/money_backgroud"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/id_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/x55"
+            android:src="@mipmap/returnn" />
+
+        <TextView
+            android:id="@+id/id_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我的钱包"
+            android:textColor="@color/monet_card_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/id_money_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:text="明细"
+            android:textColor="@color/monet_card_text"
+            android:textSize="18dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/ptr_sv_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ptr:ptrAnimationStyle="flip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:background="@drawable/money_backgroud_shape"
+                android:paddingBottom="@dimen/x10">
+
+                <TextView
+                    android:id="@+id/id_money_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x15_text_main"
+                    android:layout_marginTop="@dimen/x5_main"
+                    android:text="会员卡"
+                    android:textColor="@color/monet_card_text"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/id_money_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/id_money_text"
+                    android:layout_marginLeft="@dimen/x15_dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/x15_dp"
+                    android:paddingBottom="@dimen/x10"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/card20" />
+
+                <ImageView
+                    android:id="@+id/id_exchange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/id_money_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:scaleType="matrix"
+                    android:src="@mipmap/exchangee"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/id_menber_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/id_money_title"
+                    android:layout_marginLeft="@dimen/x20_main"
+                    android:layout_marginBottom="@dimen/x15_dp"
+                    android:text="到期时间"
+                    android:textColor="@color/bg_white"
+                    android:textSize="@dimen/x15_text_main" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_buy"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:background="@mipmap/bg142">
+
+                <TextView
+                    android:id="@+id/tv_describe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x15_text_main"
+                    android:layout_marginTop="@dimen/x12"
+                    android:text="购买会员包天卡不限次畅骑"
+                    android:textColor="@color/bg_black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@id/tv_describe"
+                    android:text="超值！"
+                    android:textColor="@color/bg_red"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_card_buy"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/x10"
+                    android:layout_marginRight="@dimen/x15_dp"
+                    android:background="@drawable/bg_vip_combo_green"
+                    android:gravity="center"
+                    android:text="购买"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:background="@mipmap/bg142">
+
+                <TextView
+                    android:id="@+id/id_my_balance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x15_text_main"
+                    android:layout_marginTop="@dimen/x15_dp"
+                    android:text="我的余额"
+                    android:textColor="@color/monet_card_text"
+                    android:textSize="@dimen/app_text_content" />
+
+                <TextView
+                    android:id="@+id/id_cz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginTop="@dimen/x15_dp"
+                    android:layout_toRightOf="@id/id_my_balance_tv"
+                    android:background="@mipmap/btn14"
+                    android:paddingLeft="@dimen/x20_main"
+                    android:paddingTop="@dimen/x5_main"
+                    android:paddingRight="@dimen/x20_main"
+                    android:paddingBottom="@dimen/x5_main"
+                    android:text="充值"
+                    android:textColor="@color/money_red"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:id="@+id/tv_return_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginTop="@dimen/x15_dp"
+                    android:layout_toRightOf="@id/id_cz"
+                    android:background="@mipmap/btn14"
+                    android:paddingLeft="@dimen/x20_main"
+                    android:paddingTop="@dimen/x5_main"
+                    android:paddingRight="@dimen/x20_main"
+                    android:paddingBottom="@dimen/x5_main"
+                    android:text="退余额"
+                    android:textColor="@color/money_red"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/id_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/id_my_balance_tv"
+                    android:layout_marginLeft="@dimen/x15_dp"
+                    android:layout_marginTop="@dimen/x10"
+                    android:text="00.00"
+                    android:textColor="@color/money_red"
+                    android:textSize="@dimen/x20_sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/x8"
+                    android:layout_marginRight="@dimen/x15_text_main"
+                    android:src="@mipmap/wallet1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_red_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:background="@mipmap/bg142">
+
+                <TextView
+                    android:id="@+id/id_my_red_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x15_text_main"
+                    android:layout_marginTop="@dimen/x15_dp"
+                    android:text="我的红包"
+                    android:textColor="@color/monet_card_text"
+                    android:textSize="@dimen/app_text_content" />
+
+                <TextView
+                    android:id="@+id/id_red_bouns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/id_my_red_tv"
+                    android:layout_marginLeft="@dimen/x15_dp"
+                    android:layout_marginTop="@dimen/x10"
+                    android:text="10.00"
+                    android:textColor="@color/money_red"
+                    android:textSize="@dimen/x20_sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/x8"
+                    android:layout_marginRight="@dimen/x15_text_main"
+                    android:src="@mipmap/red1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_deposit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:background="@mipmap/bg142">
+
+                <TextView
+                    android:id="@+id/id_my_safe_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x15_text_main"
+                    android:layout_marginTop="@dimen/x15_dp"
+                    android:text="我的保证金"
+                    android:textColor="@color/monet_card_text"
+                    android:textSize="@dimen/app_text_content" />
+
+                <TextView
+                    android:id="@+id/recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginTop="@dimen/x15_dp"
+                    android:layout_toRightOf="@id/id_my_safe_tv"
+                    android:background="@mipmap/btn14"
+                    android:paddingLeft="@dimen/x20_main"
+                    android:paddingTop="@dimen/x5_main"
+                    android:paddingRight="@dimen/x20_main"
+                    android:paddingBottom="@dimen/x5_main"
+                    android:text="退保证金"
+                    android:textColor="@color/money_red"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:id="@+id/id_recharge_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/id_my_safe_tv"
+                    android:layout_marginLeft="@dimen/x15_dp"
+                    android:layout_marginTop="@dimen/x8"
+                    android:text="00.00"
+                    android:textColor="@color/money_red"
+                    android:textSize="@dimen/x20_sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/x8"
+                    android:layout_marginRight="@dimen/x15_text_main"
+                    android:src="@mipmap/safe" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+
+</LinearLayout>

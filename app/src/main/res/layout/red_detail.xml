@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x15_dp"
+        android:layout_marginBottom="@dimen/x15_dp"
+        android:background="@drawable/yuan_white_shape"
+        android:paddingTop="@dimen/x20_main"
+        android:paddingBottom="@dimen/x20_main">
+
+        <TextView
+            android:id="@+id/id_getRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15_dp"
+            android:text="11111"
+            android:textColor="@color/x3"
+            android:textSize="@dimen/app_text_content" />
+
+        <TextView
+            android:id="@+id/id_getStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_getRed"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="@dimen/x15_dp"
+            android:text="状态"
+            android:textColor="@color/x6_gray"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/id_getMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/x15_dp"
+            android:text="2222"
+            android:textColor="@color/money_red"
+            android:textSize="@dimen/app_text_content" />
+
+        <TextView
+            android:id="@+id/id_getTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_getRed"
+            android:layout_marginLeft="@dimen/x15_dp"
+            android:layout_marginTop="@dimen/x25"
+            android:text="33333"
+            android:textColor="@color/x9_login"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/id_getAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_getMoney"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/x20_main"
+            android:layout_marginRight="@dimen/x15_dp"
+            android:text="5555"
+            android:textColor="@color/x3"
+            android:textSize="@dimen/x13_sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

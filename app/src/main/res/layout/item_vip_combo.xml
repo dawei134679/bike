@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x50">
+
+    <RelativeLayout
+        android:id="@+id/rl_vip_combo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:background="@drawable/combo_bg1">
+
+        <TextView
+            android:id="@+id/tv_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="@dimen/x20_main"
+            android:text="测试"
+            android:textColor="@color/bg_black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_card_context"
+            android:layout_below="@id/tv_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20_main"
+            android:text="不限次畅骑"
+            android:textColor="@color/x6_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_card_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20_main"
+            android:text="0.01"
+            android:textColor="@color/x6_gray"
+            android:textSize="@dimen/x18_sp" />
+    </RelativeLayout>
+</FrameLayout>

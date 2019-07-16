@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_backgroud"
+    tools:context="com.example.admin.drawlayouttest.activity.RenZhengActivity"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+        <ImageView
+            android:id="@+id/id_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/returnn"
+            android:paddingRight="@dimen/x55"
+            />
+
+        <TextView
+            android:id="@+id/id_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改昵称"
+            android:textSize="18sp"
+            android:textColor="@color/monet_card_text"
+            android:layout_gravity="center"
+
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵称："
+        android:textSize="@dimen/x16_sp"
+        android:layout_marginTop="@dimen/x30"
+        android:layout_marginLeft="@dimen/x15_dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/id_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/input1"
+        android:layout_marginRight="@dimen/x15_dp"
+        android:layout_marginLeft="@dimen/x15_dp"
+        android:layout_marginTop="@dimen/x15_dp"
+
+        >
+
+        <EditText
+            android:id="@+id/id_person_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/x15_text_main"
+            android:layout_marginLeft="@dimen/x15_dp"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/x20_main"
+            android:background="@null"
+
+            android:textColorHint="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/id_person_name_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/clse"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x15_dp"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/x15_dp"
+            />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/id_submit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/btn151"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/x12"
+        android:paddingTop="@dimen/x12"
+        android:textSize="@dimen/x20_sp"
+        android:text="确定"
+        android:textColor="@color/guzhang"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/x15_dp"
+        android:layout_marginRight="@dimen/x15_dp"
+        android:layout_marginTop="@dimen/x30"
+        />
+
+
+
+</LinearLayout>

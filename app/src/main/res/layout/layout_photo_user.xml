@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_backgroud"
+    >
+
+
+    <TextView
+    android:id="@+id/id_Upload_fault"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="上传故障"
+        android:textColor="@color/primary_dark"
+    android:textSize="20sp"
+
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    />
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="#ccc"
+    >
+
+    </View>
+
+    <TextView
+    android:id="@+id/id_User_guide"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="用户指南"
+        android:textColor="@color/primary_dark"
+    android:textSize="20sp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccc"
+        >
+
+    </View>
+
+    <TextView
+        android:id="@+id/id_weixin_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="客服热线"
+        android:textColor="@color/primary_dark"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        />
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="5dp"-->
+    <!--android:background="#ffff"-->
+    <!--&gt;-->
+    <!--</View>-->
+
+</LinearLayout>

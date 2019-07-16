@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/id_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fitsSystemWindows="true"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:id="@+id/id_back_vip_combo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/x55"
+                android:src="@mipmap/returnn" />
+
+            <TextView
+                android:id="@+id/id_title_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="酷游会员套餐"
+                android:textColor="@color/monet_card_text"
+                android:textSize="@dimen/sp_18" />
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/line_view" />
+
+        <ListView
+            android:id="@+id/lv_vip_combo"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginLeft="@dimen/x15_dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/x15_dp"
+            android:divider="@color/transparent"
+            android:dividerHeight="@dimen/x10" />
+
+        <TextView
+            android:id="@+id/tv_is_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15_dp"
+            android:layout_marginRight="@dimen/x15_dp"
+            android:background="@drawable/combo_tag" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15_dp"
+            android:layout_marginRight="@dimen/x15_dp"
+            android:src="@drawable/combo_describe" />
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_marginLeft="@dimen/x15_dp"-->
+        <!--android:layout_marginTop="@dimen/x10"-->
+        <!--android:layout_marginRight="@dimen/x15_dp">-->
+
+        <!--<View-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:background="@color/line_view" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text="购买须知"-->
+        <!--android:textColor="@color/bg_black"-->
+        <!--android:textSize="14sp" />-->
+
+        <!--<View-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:background="@color/line_view" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/x15_dp"-->
+        <!--android:layout_marginTop="@dimen/x10"-->
+        <!--android:layout_marginRight="@dimen/x15_dp"-->
+        <!--android:text="1、骑行套餐生效期间，每次形成前2小时免费，超出部分按照3元/30分钟规则计费；"-->
+        <!--android:textColor="@color/bg_black"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/x15_dp"-->
+        <!--android:layout_marginRight="@dimen/x15_dp"-->
+        <!--android:text="2、当前无骑行套餐情况下，购买后优惠权益立即生效，该优惠权益仅限在有效期内使用，过期失效；"-->
+        <!--android:textColor="@color/bg_black"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/x15_dp"-->
+        <!--android:layout_marginRight="@dimen/x15_dp"-->
+        <!--android:text="3、骑行套餐在结费时是否适用，以落锁时骑行套餐的生效状态为准；"-->
+        <!--android:textColor="@color/bg_black"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/x15_dp"-->
+        <!--android:layout_marginRight="@dimen/x15_dp"-->
+        <!--android:text="4、本套餐只适用于单车产品，不适用于观光车等其他酷游产品；"-->
+        <!--android:textColor="@color/bg_black"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/x15_dp"-->
+        <!--android:layout_marginRight="@dimen/x15_dp"-->
+        <!--android:text="5、骑行套餐生效期间，仍需要遵守定点借还规则；"-->
+        <!--android:textColor="@color/bg_black"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/x15_dp"-->
+        <!--android:layout_marginRight="@dimen/x15_dp"-->
+        <!--android:text="6.单车运营季为每年4到10月，运营季后车辆投放数量会进行调整，请您合理安排选购套餐；"-->
+        <!--android:textColor="@color/bg_black"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/x15_dp"-->
+        <!--android:layout_marginRight="@dimen/x15_dp"-->
+        <!--android:text="7、购卡成功后，相应费用不予退还。"-->
+        <!--android:textColor="@color/bg_black"-->
+        <!--android:textSize="12sp" />-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/x15_dp"
+        android:layout_marginRight="@dimen/x15_dp">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="10"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/x20_sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x50"
+            android:text="元"
+            android:textColor="@color/bg_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/combo_buy" />
+    </RelativeLayout>
+</LinearLayout>

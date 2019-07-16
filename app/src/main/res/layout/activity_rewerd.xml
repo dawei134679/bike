@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.admin.drawlayouttest.activity.RewerdActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+        <ImageView
+            android:id="@+id/id_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:paddingRight="@dimen/x10"
+            />
+
+        <TextView
+            android:id="@+id/id_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的卡卷"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/id_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会员卡"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:background="@drawable/rewerd_backgroud"
+            >
+
+            <TextView
+                android:id="@+id/id_card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="酷游会员"
+                android:textSize="40sp"
+                android:textColor="#CCCCCC"
+
+                />
+            <TextView
+                android:id="@+id/id_card_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="酷游会员享受包天骑行优惠，购买请咨询各线下渠道或致电4006789819。"
+                android:textColor="#CCCCCC"
+                android:textSize="20dp"
+                android:paddingTop="80dp"
+
+                />
+            <TextView
+                android:id="@+id/id_card_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会员的有效期"
+                android:textSize="20dp"
+                android:paddingTop="90dp"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/id_card_rights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会员权益"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/id_card_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入兑换码"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:inputType="number"
+            />
+
+
+        <Button
+            android:id="@+id/id_card_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="兑换"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+    <!--酷游会员激活界面 -->
+
+    <LinearLayout
+        android:id="@+id/id_activation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="激活码有效，内容为：2天畅骑卡。"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会员政策"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="畅骑卡使用期间不限次数畅骑；
+畅骑卡使用期间每次行程前120分钟免费，超出部分按正常计费规则收费；
+畅骑卡免费骑行天数从兑换当日开始计算，至畅骑卡失效日期当日结束；
+购卡成功后，相应费用不予退还；
+退保证金后无法再骑车，且已购买的畅骑卡剩余时长不变，在畅骑卡有效期内您仍可以通过充值保证金回复畅骑卡权益；"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注意："
+            android:textColor="#FF0000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酷游会员同样需要遵守定点停车，如因强制停车产生的20元调度费用需自行承担。"
+            android:textColor="#FF0000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认兑换，请点击确认，畅骑卡即时生效。"
+            />
+
+        <Button
+            android:id="@+id/id_activation_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确认兑换"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+<!--会员云焕成功 -->
+
+    <LinearLayout
+        android:id="@+id/id_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兑换成功！"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/id_confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确认"
+            android:layout_marginTop="20dp"
+            />
+
+
+    </LinearLayout>
+
+    <!--酷游会员-->
+
+    <LinearLayout
+        android:id="@+id/id_format_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尊贵的酷游会员您的酷卡会员有效期为：2017/7/23  18:30:28"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会员政策"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:paddingTop="70dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酷游会员从购买成功之时起生效，有效期内120分钟内的骑行可不限次数骑行，免收骑行费。"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注意:"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            android:paddingTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酷游会员同样需要遵守定点停车，如因强制停车产生的20元调度费用需自行承担。"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+
+            />
+
+    </LinearLayout>
+
+
+    
+
+
+
+
+</LinearLayout>

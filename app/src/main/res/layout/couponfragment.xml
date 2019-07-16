@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:id="@+id/id_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15_dp"
+            android:layout_marginRight="@dimen/x15_dp"
+            android:layout_marginTop="@dimen/x15_dp"
+
+            android:background="@drawable/yuan_white_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_card_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15_dp"
+                android:layout_marginTop="@dimen/x15_dp"
+                android:text="会员卡"
+                android:textColor="@color/safe"
+                android:textSize="@dimen/app_text_content" />
+
+
+            <ImageView
+                android:id="@+id/id_member_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_card_tv"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_marginBottom="@dimen/x15_dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/card20" />
+
+            <TextView
+                android:id="@+id/id_menber_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/id_member_img"
+                android:layout_marginBottom="@dimen/x15_dp"
+                android:layout_marginLeft="@dimen/x20_main"
+                android:text="到期时间"
+                android:textSize="@dimen/x15_text_main"
+
+                />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/id_card_edit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="@dimen/x50"
+                android:background="@drawable/yuan_white_shape"
+                android:hint="请输入您的兑换码"
+                android:paddingLeft="@dimen/x10"
+                android:textColorHint="@color/x9_login"
+                android:textSize="@dimen/x15_text_main" />
+
+            <ImageView
+                android:id="@+id/id_coupon_scan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/scann"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="@dimen/x50"
+                android:layout_marginRight="15dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/id_card_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/x15_dp"
+            android:layout_marginRight="@dimen/x15_dp"
+            android:layout_marginTop="@dimen/x15_dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/exchange" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

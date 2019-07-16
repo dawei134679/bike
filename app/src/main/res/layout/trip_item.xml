@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yuan_white_shape"
+        android:layout_marginRight="@dimen/x15_dp"
+        android:paddingBottom="@dimen/x15_dp"
+        android:layout_marginBottom="@dimen/x15_dp"
+
+
+        >
+
+        <TextView
+            android:id="@+id/id_trip_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-01-01 20:00:00"
+            android:textColor="@color/x3"
+            android:textSize="@dimen/app_text_content"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x15_dp"
+
+            />
+        <TextView
+            android:id="@+id/id_trip_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单车编号：3351000001"
+            android:textColor="@color/x9_login"
+            android:textSize="@dimen/x15_text_main"
+            android:layout_marginTop="@dimen/x12"
+            android:layout_marginLeft="@dimen/x15_dp"
+            android:layout_below="@id/id_trip_date"
+            />
+        <TextView
+            android:id="@+id/id_trip_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="骑车时间：3分钟"
+            android:textColor="@color/x9_login"
+            android:textSize="@dimen/x15_dp"
+            android:layout_marginTop="@dimen/x8"
+            android:layout_marginLeft="@dimen/x15_dp"
+            android:layout_below="@id/id_trip_number"
+            />
+
+        <TextView
+            android:id="@+id/id_trip_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="骑行花费：3元"
+            android:textColor="@color/x9_login"
+            android:textSize="@dimen/x15_text_main"
+            android:layout_marginTop="@dimen/x8"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_below="@id/id_trip_number"
+            android:layout_toRightOf="@id/id_trip_time"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

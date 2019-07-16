@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_backgroud"
+    tools:context="com.example.admin.drawlayouttest.activity.SafeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/id_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/x55"
+            android:src="@mipmap/returnn" />
+
+        <TextView
+            android:id="@+id/id_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="充值"
+            android:textColor="@color/monet_card_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/id_post_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/x10"
+            android:text="完成"
+            android:textColor="@color/x3"
+            android:textSize="@dimen/x15_text_main" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/id_safe_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x140"
+        android:src="@mipmap/success3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_safe_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_safe_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x35"
+            android:gravity="center"
+            android:text="是否确定将你的保证金退回"
+            android:textColor="@color/safe"
+            android:textSize="@dimen/app_text_content"
+            android:visibility="gone"
+
+
+            />
+
+        <TextView
+            android:id="@+id/id_active_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x50"
+            android:gravity="center"
+            android:text="恭喜你 充值成功"
+            android:textColor="@color/x3"
+            android:textSize="@dimen/app_text_content"
+
+            />
+
+        <TextView
+            android:id="@+id/id_active_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x30"
+            android:gravity="center"
+            android:text="酷游畅游卡兑换成功"
+            android:textColor="@color/x3"
+            android:textSize="@dimen/app_text_content"
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:id="@+id/id_active_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x10"
+            android:gravity="center"
+            android:text="酷游会员激活成功"
+            android:textColor="@color/x3"
+            android:textSize="@dimen/app_text_content"
+            android:visibility="gone"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/x15_dp"
+        android:layout_marginRight="@dimen/x15_dp"
+        android:layout_marginBottom="@dimen/x17"
+        android:orientation="horizontal"
+        android:visibility="gone"
+
+        >
+
+        <ImageView
+            android:id="@+id/id_safe_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/no"
+
+            />
+
+        <ImageView
+            android:id="@+id/id_safe_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/yes" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

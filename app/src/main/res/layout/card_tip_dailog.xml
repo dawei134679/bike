@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp">
+
+
+  <FrameLayout
+      android:id="@+id/card_relative"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+
+      >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/card_tip_img"
+            android:scaleType="fitXY"
+            />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恭喜你"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/zuo2x"
+           android:layout_alignTop="@id/card_title"
+            android:layout_toLeftOf="@id/card_title"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/you2x"
+            android:layout_alignTop="@id/card_title"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/card_title"
+            android:layout_marginLeft="@dimen/x15_dp"
+            />
+        <TextView
+            android:id="@+id/card_login_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册成功，送您新人大礼包"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/card_title"
+            android:layout_marginTop="7dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/card_login_success_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册成功，送您新人大礼包"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/card_login_success"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+  </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/card_gift_rale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@id/card_relative"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        >
+        <TextView
+            android:id="@+id/card_gift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="超值礼包"
+            android:textSize="14sp"
+            android:textColor="#dd4648"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:id="@+id/card_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已放入你的账户，18888888888"
+            android:textSize="14sp"
+            android:textColor="#dd4648"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/card_gift"
+            />
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/card_rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/guanbi"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/card_go_rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/card_rela"
+
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        >
+        <TextView
+
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="去看看"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/card_shape"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/card_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/card_tip_button"
+            android:scaleType="fitXY"
+            android:clickable="true"
+            />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/card_go_rela"
+        android:paddingTop="10dp"
+        android:layout_below="@id/card_gift_rale"
+        android:background="#fff"
+       android:paddingBottom="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</RelativeLayout>

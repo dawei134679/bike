@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'org.greenrobot.greendao'
+android {
+//    signingConfigs {
+//        release {
+//            keyAlias 'coolu'
+//            keyPassword 'wls123456'
+//            storeFile file('D:/ASP/qindata/签名文件/coolu.jks')
+//            storePassword 'wls123456'
+//        }
+//    }
+    compileSdkVersion 28
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.coolu.nokelock.bike"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 68
+        versionName "1.5.9.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "0RHdk4yhYC63kAQOwelIi2",
+                GETUI_APP_KEY   : "pp3c3uk0pR9K9eigNGYHR1",
+                GETUI_APP_SECRET: "jOiwn3h5Cj5zPYtAFrP079"
+        ]
+        multiDexEnabled true
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.release
+        }
+    }
+
+    //添加如下配置就ok了
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+repositories {
+    flatDir {
+        dirs '../app/libs'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-annotations:25.0.0'
+    }
+    compile project(':blelibrary')
+    compile files('libs/GetuiSDK2.10.2.0.jar')
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:design:25.1.1'
+    compile 'com.android.support:cardview-v7:25.1.1'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okio:okio:1.6.0'
+    compile 'org.greenrobot:greendao:3.0.1'
+    compile 'org.greenrobot:greendao-generator:3.0.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.youzanyun.open.mobile:basic:5.3.5'
+    compile 'com.android.support:multidex:1.0.1'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile files('libs/umeng-analytics-7.5.0.jar')
+    compile files('libs/umeng-analytics-v6.1.2.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/Sunflower.jar')
+    compile 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    compile 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+
+    compile'com.loopeer.android.thirdparty.pulltorefresh:Android-PullToRefresh:2.1.1'
+    //闪验sdk
+    compile(name:'shanyan_sdk_v2.1.3', ext:'aar')
+}
+
+
+greendao {
+    schemaVersion 6
+    daoPackage 'com.sunshine.dao.db'
+    targetGenDir 'src/main/java'
+}

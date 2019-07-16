@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_balance_is_negative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/money_backgroud"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.coolu.nokelock.bike.activity.BalanceIsNegativeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+        <ImageView
+            android:id="@+id/id_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/returnn"
+            android:paddingRight="@dimen/x55"
+            />
+
+        <TextView
+            android:id="@+id/id_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值"
+            android:textSize="18sp"
+            android:textColor="@color/monet_card_text"
+            android:layout_gravity="center"
+
+            />
+        <TextView
+            android:id="@+id/id_money_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/monet_card_text"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/balance_negative_money"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的余额"
+        android:textColor="@color/text_black_color"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+            <ImageView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/renminbi_black"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_marginRight="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_me_surplus_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/x40_sp"
+                android:layout_toRightOf="@+id/tv_money"
+                />
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_balance_negative_true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@mipmap/balance_negative_true"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请您先缴清骑行费用"
+            android:textColor="@color/text_black_color"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/tv_tishi_jine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="然后再退还 39 元保证金"
+            android:textColor="@color/text_black_color"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
